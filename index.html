@@ -6,146 +6,126 @@
   <title>Ujjwol Bajgain — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="noise"></div>
   <div class="cursor" id="cursor"></div>
   <div class="cursor-dot" id="cursorDot"></div>
 
-  <nav class="nav">
-    <div class="nav-logo">UB<span class="dot">.</span></div>
-    <ul class="nav-links">
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-logo">Ujjwol<span class="dot">.</span></div>
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="nav-cta"><a href="contact.html" class="btn-outline">Let's Talk</a></div>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-tag"><span class="tag-dot"></span> Studying @ Kyungdong University, South Korea</div>
+    <div class="hero-blob blob1"></div>
+    <div class="hero-blob blob2"></div>
+    <div class="hero-blob blob3"></div>
+
     <div class="hero-content">
-      <p class="hero-sub reveal">Hello, I'm</p>
-      <h1 class="hero-name reveal delay-1">Ujjwol<br/><em>Bajgain</em></h1>
-      <p class="hero-desc reveal delay-2">A creative developer & designer based in South Korea, passionate about building beautiful digital experiences that leave a lasting impression.</p>
-      <div class="hero-btns reveal delay-3">
-        <a href="projects.html" class="btn-primary">View My Work</a>
-        <a href="contact.html" class="btn-ghost">Get In Touch ↗</a>
+      <div class="hero-badge">👋 Hello World!</div>
+      <h1 class="hero-title">
+        I'm <span class="gradient-text">Ujjwol</span><br/>
+        <em>Bajgain</em>
+      </h1>
+      <p class="hero-sub">Creative Developer & Designer</p>
+      <p class="hero-desc">
+        A passionate developer studying at <strong>Kyungdong University, South Korea 🇰🇷</strong>. 
+        I build beautiful, fast, and memorable digital experiences.
+      </p>
+      <div class="hero-btns">
+        <a href="about.html" class="btn-primary">About Me</a>
+        <a href="contact.html" class="btn-secondary">Contact Me ↗</a>
+      </div>
+      <div class="hero-info">
+        <div class="info-chip">📍 South Korea</div>
+        <div class="info-chip">🎓 Kyungdong University</div>
+        <div class="info-chip">🇳🇵 Nepali</div>
       </div>
     </div>
-    <div class="hero-scroll"><span>scroll</span><div class="scroll-line"></div></div>
-    <div class="hero-badge">
-      <svg viewBox="0 0 100 100" class="badge-svg">
-        <path id="circlePath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/>
-        <text><textPath href="#circlePath">UJJWOL BAJGAIN · DEVELOPER · DESIGNER ·</textPath></text>
-      </svg>
-      <div class="badge-icon">✦</div>
+
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="card-avatar">UB</div>
+        <h3>Ujjwol Bajgain</h3>
+        <p>Developer & Designer</p>
+        <div class="card-status"><span class="status-dot"></span> Available Now</div>
+        <div class="card-links">
+          <a href="mailto:ujjwalbajgain47@gmail.com">✉ Email</a>
+          <a href="tel:+8201099570402">📞 Call</a>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- MARQUEE -->
   <div class="marquee-wrap">
     <div class="marquee">
-      <span>Web Development</span><span class="mx">✦</span>
-      <span>UI/UX Design</span><span class="mx">✦</span>
-      <span>South Korea</span><span class="mx">✦</span>
-      <span>Kyungdong University</span><span class="mx">✦</span>
-      <span>Creative Coding</span><span class="mx">✦</span>
-      <span>Problem Solving</span><span class="mx">✦</span>
-      <span>Web Development</span><span class="mx">✦</span>
-      <span>UI/UX Design</span><span class="mx">✦</span>
-      <span>South Korea</span><span class="mx">✦</span>
-      <span>Kyungdong University</span><span class="mx">✦</span>
-      <span>Creative Coding</span><span class="mx">✦</span>
-      <span>Problem Solving</span><span class="mx">✦</span>
+      <span>Web Development</span><span class="sep">✦</span>
+      <span>UI/UX Design</span><span class="sep">✦</span>
+      <span>South Korea 🇰🇷</span><span class="sep">✦</span>
+      <span>Kyungdong University</span><span class="sep">✦</span>
+      <span>Creative Coding</span><span class="sep">✦</span>
+      <span>Nepal 🇳🇵</span><span class="sep">✦</span>
+      <span>Web Development</span><span class="sep">✦</span>
+      <span>UI/UX Design</span><span class="sep">✦</span>
+      <span>South Korea 🇰🇷</span><span class="sep">✦</span>
+      <span>Kyungdong University</span><span class="sep">✦</span>
+      <span>Creative Coding</span><span class="sep">✦</span>
+      <span>Nepal 🇳🇵</span><span class="sep">✦</span>
     </div>
   </div>
 
-  <section class="about-snip section">
-    <div class="about-snip-grid">
-      <div class="about-snip-left">
-        <span class="section-label">// About Me</span>
-        <h2 class="section-title">Crafting Digital<br/><em>Experiences</em></h2>
-        <p>I'm Ujjwol Bajgain — a developer with an eye for design, currently studying at <strong>Kyungdong University, South Korea</strong>. I build websites and applications that are fast, accessible, and visually striking.</p>
-        <a href="about.html" class="btn-primary mt">Learn More →</a>
-      </div>
-      <div class="about-snip-right">
-        <div class="stat-card"><h3>2+</h3><p>Years Coding</p></div>
-        <div class="stat-card accent"><h3>🇰🇷</h3><p>South Korea</p></div>
-        <div class="stat-card"><h3>10+</h3><p>Projects Done</p></div>
-        <div class="stat-card dark"><h3>100%</h3><p>Dedication</p></div>
-      </div>
+  <!-- SKILLS -->
+  <section class="skills-section section">
+    <div class="section-header">
+      <span class="section-tag">// What I Know</span>
+      <h2>My <span class="gradient-text">Skills</span></h2>
+      <p>Technologies and tools I work with</p>
     </div>
-  </section>
-
-  <section class="skills section">
-    <span class="section-label">// Skills & Tools</span>
-    <h2 class="section-title">What I Work With</h2>
     <div class="skills-grid">
-      <div class="skill-item"><span>HTML5</span><div class="skill-bar"><div style="width:95%"></div></div></div>
-      <div class="skill-item"><span>CSS3</span><div class="skill-bar"><div style="width:90%"></div></div></div>
-      <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div style="width:80%"></div></div></div>
-      <div class="skill-item"><span>React</span><div class="skill-bar"><div style="width:70%"></div></div></div>
-      <div class="skill-item"><span>Python</span><div class="skill-bar"><div style="width:75%"></div></div></div>
-      <div class="skill-item"><span>Git & GitHub</span><div class="skill-bar"><div style="width:85%"></div></div></div>
-    </div>
-  </section>
-
-  <section class="projects-teaser section">
-    <span class="section-label">// Projects</span>
-    <h2 class="section-title">Featured Work</h2>
-    <div class="project-cards">
-      <div class="project-card">
-        <div class="project-num">01</div>
-        <h3>Project Alpha</h3>
-        <p>A modern web application built with clean code and thoughtful UX design principles.</p>
-        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-        <a href="projects.html" class="project-link">View Project →</a>
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <h3>HTML5</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+        <span>95%</span>
       </div>
-      <div class="project-card highlight">
-        <div class="project-num">02</div>
-        <h3>Project Beta</h3>
-        <p>Interactive UI experience focused on performance and visual storytelling.</p>
-        <div class="project-tags"><span>React</span><span>CSS</span><span>API</span></div>
-        <a href="projects.html" class="project-link">View Project →</a>
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <h3>CSS3</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        <span>90%</span>
       </div>
-      <div class="project-card">
-        <div class="project-num">03</div>
-        <h3>Project Gamma</h3>
-        <p>Full-stack solution solving real-world problems with elegant architecture.</p>
-        <div class="project-tags"><span>Python</span><span>JS</span><span>DB</span></div>
-        <a href="projects.html" class="project-link">View Project →</a>
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <h3>JavaScript</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        <span>80%</span>
       </div>
-    </div>
-    <div class="center mt"><a href="projects.html" class="btn-outline">See All Projects</a></div>
-  </section>
-
-  <section class="cta-band">
-    <h2>Ready to build something <em>amazing</em>?</h2>
-    <a href="contact.html" class="btn-primary large">Start a Conversation →</a>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-logo">UB<span class="dot">.</span></div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+      <div class="skill-card">
+        <div class="skill-icon">⚛️</div>
+        <h3>React</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        <span>70%</span>
       </div>
-      <div class="footer-social">
-        <a href="https://github.com/ujjwolbajgain" target="_blank">GitHub</a>
-        <a href="mailto:ujjwalbajgain47@gmail.com">Email</a>
-        <a href="tel:+8201099570402">📞 Call</a>
+      <div class="skill-card">
+        <div class="skill-icon">🐍</div>
+        <h3>Python</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        <span>75%</span>
       </div>
-    </div>
-    <p class="footer-copy">© 2026 Ujjwol Bajgain · Kyungdong University, South Korea · All rights reserved.</p>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-</html>
+      <div class="skill-card">
+        <div class="skill-icon">🔧</div>
+        <h3>Git & GitHub</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        <spa
